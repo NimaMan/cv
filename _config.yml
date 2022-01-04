@@ -56,14 +56,14 @@ content:
         link:
         link_text: 
         additional_links:
-          - title: 
+          - title: In collabration with [Stefan Falkner](https://scholar.google.com/citations?user=r7FWJEkAAAAJ&hl=de)
             icon: 
             url:
         quote: >
           Our algorithm, Block Evolutionary Training (BET), reaches higher rewards than Reinforcement Learning methods on PyBullet physics engine simulater.    
         description: | # this will include new lines to allow paragraphs
           Evolutionary methods have been shown to be a competitive alternative to DRL methods in solving sequential decision-making problems.
-          [Salimans, et al. (2017)](https://arxiv.org/abs/1703.03864) show that a simple variant of the Natural Evolution Strategies (NES) can achieve similar performance
+          [Salimans, et al. (2017)](https://arxiv.org/abs/1703.03864) show that a simple variant of the Natural Evolution Strategies can achieve similar performance
           to the Deep Reinforcement Learning methods on Atari and Mujoco environments. We show that by integrating the structure of the neural policy network into Evolution Strategies 
           one can achive higher rewards on continuous control tasks such as PyBullet environment. 
       - layout: left
@@ -83,65 +83,120 @@ content:
           We show that Evolution Strategies can learn neural policy networks for managing inventory in different inventory management problems 
           with an order of magnitude smaller neural networks and without need for hyper-parameter optimization.   
       - layout: left
-        border: weak
         title: Reinforced Genetic Algorithm
         link: 
         link_text: 
         quote: >
-          Short overview of the project (optional)
+          We integrate learning into genetic algorithm for solving Combinatorial Optmization problems using Reinforcement Learning and Evolution Strategies.
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
-  
+          Our goals in this project are twofold. First, we train graph neural networks (GNN) that generate near optimal solutions to the Parallel Machine Scheduling, Travelling Salesman, and maximum cut problems
+          with a single forward pass of the neural network. Second, we learn GNNs that act as the mutation operator of the genetic algorithms. Our main objective is to train GNNs on smaller problems and transfer the results 
+          for solving bigger problems. This is particularly useful for problems where exact methods are computationally intensive and heuristics cannot produce acceptable solutions.  
 
   - title: Working Experience
     layout: list
     content:
-      - layout: right
+      - layout: left
+        border: weak
         title: Eindhoven University of Technology
         sub_title: Postdoctoral Research Associate
         caption: Sept 2020 - present
         link: 
         quote: >
-          Short description of the company (optional)
+          I conduct research as a member of the Future Logistics project and supervise students.  
         description: | # this will include new lines to allow paragraphs
-          Description of role
-      - layout: right
-        title: Bosch Center for Artificial Intelligence
+          
+      - layout: left
+        border: weak
+        title: Bosch Center for AI
         sub_title: PhD Industrial Sabbatical
         caption: Feb 2019 - Jan 2020
         link: 
         quote: >
-          Machine Learning for automating the scheduling decisions in the semiconductor wafer fabrication.
+          I was involved in the Machine Learning for automating the scheduling decisions in the semiconductor wafer fabrication project.
         description: | # this will include new lines to allow paragraphs
           I worked on ML + scheduling + 
-      - layout: right
+      - layout: left
         title: Koç University 
         sub_title: PhD Candidate
         caption: Sept 2016 - Sept 2020
         link: 
         quote: >
-          Machine Learning for automating the scheduling decisions in the semiconductor wafer fabrication.
+          PhD Thesis Title:  Modelling and Control of Production Systems Based on Observed Inter-event Times: An Analytical and Empirical Investigation
         description: | # this will include new lines to allow paragraphs
-          I worked on ML + scheduling + 
+          I conducted my research under supervision of [Prof. Dr. Barış Tan](http://home.ku.edu.tr/~btan/) as part of the **Process Virtualization** and **Process Control** work-packages of the 
+          [Productive4.0](https://productive40.eu/) project. My contributions can be summerised as follows:
+          - I analysed several hundred million rows of event data from several hundred machines in the semiconductor wafer fabrication of the Bosch Company.
+          - I developed machine learning and statistical methods to predict the production times of the products in the production network.
+          - I conducted theoretical research on the implications of the data-analysis results on the optimal control of the system.
+          
+          For further detail you can refer to my PhD Thesis and my publications.  
+
+  - title: Skills # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Machine Learning  
+        description: | # this will include new lines to allow paragraphs
+          Reinforcement Learning, Supervised Learning, Unsupervised Learning, Deep Learning, Graph Neural Networks, Gradient-Free Learning, Statistical Learning 
+      - layout: left
+        title: Optimization methods
+        description: | # this will include new lines to allow paragraphs
+          Combinatorial Optimization, Stochastic Optimization, Evolution Strategies, Genetic Algorithms, Monte-Carlo Tree Search, Markov Decision Processes, Mathematical Programming, Constraint Programming, and Dynamic Programming
+      - layout: left
+        title: Applications  
+        description: | # this will include new lines to allow paragraphs
+          Semiconductor Wafer Fabrication, Supply Chain Management, Resource Allocation, Inventory Control, Production Planning, Scheduling, Routing, Healthcare Operations, Queuing Systems
+      - layout: left
+        title: Software  
+        description: | # this will include new lines to allow paragraphs
+          - Programming Languages: Python, C++
+          - Python-C++ Integration Module: Pybind11
+          -	Parallel Processing Modules: MPI, Multiprocessing  
+          -	Discrete Optimization Modules: Gurobi, CPLEX, LocalSolver, SCIP, Google OR Tools
+          -	Deep Learning Modules: Pytorch
+          -	Data Analytics and Visualization Modules: Numpy, Pandas, Scipy, Scikit-learn, Matplotlib, Seaborn, Bokeh, Plotly
+      - layout: left
+        title: Leadership and Coordination  
+        description: | # this will include new lines to allow paragraphs
+        - Master Student Thesis Supervision 
+        -	Bachelor Student Thesis Supervision
+        - Academia(Research)-Industry(Practice) Project Coordination
+          -	[Productive4.0] (https://productive40.eu/) Project (Coordination between Koç University and Bosch Semiconductor Manufacturing)
+          - Autonomous Planing Project (Coordination between Bosch Center for Artificial Intelligence and Bosch Semiconductor Manufacturing) 
+
+  - title: Intellectual Properties
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - [Learn Offline, Search Online, A Hybrid Approach to Solving Scheduling Problems](https://patents.justia.com/patent/20210312280) (Patent No. 389829)
+      - Reinforced Random Key Genetic Algorithm for Combinatorial Optimization (under processing)
+
+  - title: Honors and Rewards
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - Academic Excellence Award - Koç University, Sept 2020
+      - Research Scholarship - The Scientific and Technological Research Council of Turkey, Sept 2018 - Feb 2019
+      - Research Scholarship - Koç University, Sept 2014 - Sept 2018
+      - Bachelor Scholarship - Sharif University of Technology, Sept 2010 - Aug 2014
+      -	Exceptional Talent Student Title (ranked among top 0.1% students in the National University Entrance Exam among more than half a million participants), June 2010
+      -	Ranked among the top 1% of the participants in the National Chemistry Olympiad - Iran, Feb 2009
 
   - title: Education
-    layout: list
-    content:
-      - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
-        quote: >
-          Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of qualification
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      -  MSc in Business Theory at  Koç University (Sept 2010 - Sept 2014)
+
+          link to thesis + info about scholarship
+      - BSc in Industrial Engineering at [Sharif University of Technology](https://en.wikipedia.org/wiki/Sharif_University_of_Technology) (Sept 2010 - Sept 2014)
+  - title: Publications
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - [Optimal control of production-inventory systems with correlated demand inter-arrival and processing times](https://www.sciencedirect.com/science/article/pii/S0925527320300839)
+      - [Modelling and analysis of the impact of correlated inter-event data on production control using Markovian arrival processes](https://link.springer.com/article/10.1007/s10696-018-9329-7)
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
-
+      
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
