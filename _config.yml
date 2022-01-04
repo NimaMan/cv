@@ -152,18 +152,18 @@ content:
         description: | # this will include new lines to allow paragraphs
           - Programming Languages: Python, C++
           - Python-C++ Integration Module: Pybind11
-          -	Parallel Processing Modules: MPI, Multiprocessing  
+          -	Parallel Processing Modules: Ray, MPI, Multiprocessing 
           -	Discrete Optimization Modules: Gurobi, CPLEX, LocalSolver, SCIP, Google OR Tools
           -	Deep Learning Modules: Pytorch
           -	Data Analytics and Visualization Modules: Numpy, Pandas, Scipy, Scikit-learn, Matplotlib, Seaborn, Bokeh, Plotly
       - layout: left
         title: Leadership and Coordination  
         description: | # this will include new lines to allow paragraphs
-        - Master Student Thesis Supervision 
-        -	Bachelor Student Thesis Supervision
-        - Academia(Research)-Industry(Practice) Project Coordination
-          -	[Productive4.0] (https://productive40.eu/) Project (Coordination between Koç University and Bosch Semiconductor Manufacturing)
-          - Autonomous Planing Project (Coordination between Bosch Center for Artificial Intelligence and Bosch Semiconductor Manufacturing) 
+          - Master Student Thesis Supervision 
+          -	Bachelor Student Thesis Supervision
+          - Academia (Research) - Industry (Practice) Project Coordination
+            - Productive4.0 Project (coordination between Koç University and Bosch Semiconductor Manufacturing)
+            - Autonomous Planing Project (coordination between Bosch Center for Artificial Intelligence and Bosch Semiconductor Manufacturing) 
 
   - title: Intellectual Properties
     layout: text
