@@ -48,48 +48,41 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: BET
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        border: weak
+        title: Block Evolutionary Training
+        link:
+        link_text: 
         additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+          - title: 
+            icon: 
+            url:
         quote: >
-          Short overview of the project (optional)
+          Our algorithm, Block Evolutionary Training (BET), reaches higher rewards than Reinforcement Learning methods on PyBullet physics engine simulater.    
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
-
+          Evolutionary methods have been shown to be a competitive alternative to DRL methods in solving sequential decision-making problems.
+          [Salimans, et al. (2017)](https://arxiv.org/abs/1703.03864) show that a simple variant of the Natural Evolution Strategies (NES) can achieve similar performance
+          to the Deep Reinforcement Learning methods on Atari and Mujoco environments. We show that by integrating the structure of the neural policy network into Evolution Strategies 
+          one can achive higher rewards on continuous control tasks such as PyBullet environment. 
       - layout: left
-        title: InvMan
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        title: Inventory Management with Evolution Strategies
+        link: https://nimaman.github.io/posts/lost_sales_rl/
+        link_text: Blog post on Evolution Strategies for solving Lost Sales Inventory Management problem
         additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          - title:  https://github.com/NimaMan/invman_public
             icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+            url: Github repository of the project
         quote: >
-          Short overview of the project (optional)
+          We show that Evolution Strategies can learn neural policy networks for managing inventory in different inventory management problems.  
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          Recently it has been shown that Reinforcement Learning (RL) agents can learn to manage inventory in inventory management problems.
+          However, RL methods require [significant hyper-parameter optimization](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3302881). 
+          We show that Evolution Strategies can learn neural policy networks for managing inventory in different inventory management problems 
+          with an order of magnitude smaller neural networks and without need for hyper-parameter optimization. 
       
       - layout: left
         title: RGA
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+        link: 
+        link_text: 
         quote: >
           Short overview of the project (optional)
         description: | # this will include new lines to allow paragraphs
