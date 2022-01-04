@@ -40,8 +40,11 @@ additional_links:
 about_profile_image: images/ben2_3.png
 about_content: | # this will include new lines to allow paragraphs
   I am detail-oriented person with the ability to look into the bigger picture of the problems that I am tackling.
-  My passion is to take the mathematical and machine learning models, combine it with the data, computation power, and intuition, and deploy it in improving the practical
+  My passion is to take the mathematical, statistical, and machine learning models, combine it with data, computation power, and intuition, and deploy it in improving the practical
   processes with the aim of building autonomous decisions making systems.
+
+  My work focuses on two different threds. First, developing intelligent data-driven decision making algorithms for solving optimization problems. 
+  Second, using optimization, statistics, and machine learning in solving challenging real-world problems. 
 
 content:
   - title: Recent Projects # Title for the section
@@ -64,6 +67,7 @@ content:
           to the Deep Reinforcement Learning methods on Atari and Mujoco environments. We show that by integrating the structure of the neural policy network into Evolution Strategies 
           one can achive higher rewards on continuous control tasks such as PyBullet environment. 
       - layout: left
+        border: weak
         title: Inventory Management with Evolution Strategies
         link: https://nimaman.github.io/posts/lost_sales_rl/
         link_text: Blog post on Evolution Strategies for solving Lost Sales Inventory Management problem
@@ -77,10 +81,10 @@ content:
           Recently it has been shown that Reinforcement Learning (RL) agents can learn to manage inventory in inventory management problems.
           However, RL methods require [significant hyper-parameter optimization](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3302881). 
           We show that Evolution Strategies can learn neural policy networks for managing inventory in different inventory management problems 
-          with an order of magnitude smaller neural networks and without need for hyper-parameter optimization. 
-      
+          with an order of magnitude smaller neural networks and without need for hyper-parameter optimization.   
       - layout: left
-        title: RGA
+        border: weak
+        title: Reinforced Genetic Algorithm
         link: 
         link_text: 
         quote: >
@@ -94,9 +98,9 @@ content:
     content:
       - layout: right
         title: Eindhoven University of Technology
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
+        sub_title: Postdoctoral Research Associate
+        caption: Sept 2020 - present
+        link: 
         quote: >
           Short description of the company (optional)
         description: | # this will include new lines to allow paragraphs
@@ -104,12 +108,22 @@ content:
       - layout: right
         title: Bosch Center for Artificial Intelligence
         sub_title: PhD Industrial Sabbatical
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
+        caption: Feb 2019 - Jan 2020
+        link: 
         quote: >
-          Short description of the company (optional)
+          Machine Learning for automating the scheduling decisions in the semiconductor wafer fabrication.
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          I worked on ML + scheduling + 
+      - layout: right
+        title: Koç University 
+        sub_title: PhD Candidate
+        caption: Sept 2016 - Sept 2020
+        link: 
+        quote: >
+          Machine Learning for automating the scheduling decisions in the semiconductor wafer fabrication.
+        description: | # this will include new lines to allow paragraphs
+          I worked on ML + scheduling + 
+
   - title: Education
     layout: list
     content:
