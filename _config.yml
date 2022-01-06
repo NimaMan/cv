@@ -105,7 +105,13 @@ content:
         quote: >
           I conduct research as a member of the Future Logistics project and supervise students.  
         description: | # this will include new lines to allow paragraphs
-          
+          I conducted my postdoctoral research as a member of the [Future Logistics](https://research.tue.nl/en/projects/future-logistics-een-proeftuin-voor-high-tech-service-logistiek) project.
+          My research mainly focused on developing block evolutionary training, extending reinforced genetic algorithm to Travelling Salesman and Maximum Cut problems, 
+          and using Reinforcement Learning and Evolutions Strategies for solving inventory management problems. 
+
+          In addition to research, I was also involved in supervising Bachelor's and Master's student thesis. 
+          You can find a list of Master's student theses that I was involved in either as a [thesis supervisor or assessor here](https://research.tue.nl/en/persons/manafzadeh-dizbin-manafzadeh-dizbin/supervised-student-theses/).
+
       - layout: left
         border: weak
         title: Bosch Center for AI
@@ -113,12 +119,13 @@ content:
         caption: Feb 2019 - Jan 2020
         link: 
         quote: >
-          I was involved in the Machine Learning for automating the scheduling decisions in the semiconductor wafer fabrication project.
+          I worked on a project using Machine Learning for automating the scheduling decisions in the semiconductor wafer fabrication.
         description: | # this will include new lines to allow paragraphs
-          I worked on ML + scheduling + 
+          I worked on applying Q-Learning and Monte-Carlo Tree Search to parallel machine scheduling problems arising in semiconductor wafer fabrication. 
+          In addition, I started developing the reinforced genetic algorithm for parallel machine scheduling problem which I later extended to Travelling Salesman and Maximum Cut problems. I also analyzed a dataset from Ion Implantation of the semiconductor wafer fabrication of Bosch company, and extracted the existing patterns in the data.  
       - layout: left
         title: Koç University 
-        sub_title: PhD Candidate
+        sub_title: PhD Candidate in Business Administration
         caption: Sept 2016 - Sept 2020
         link: 
         quote: >
@@ -146,7 +153,7 @@ content:
       - layout: left
         title: Applications  
         description: | # this will include new lines to allow paragraphs
-          Semiconductor Wafer Fabrication, Supply Chain Management, Resource Allocation, Inventory Control, Production Planning, Scheduling, Routing, Healthcare Operations, Queuing Systems
+          Supply Chain Management, Resource Allocation, Inventory Control, Production Planning, Scheduling, Routing, Healthcare Operations, Queuing Systems, Semiconductor Wafer Fabrication
       - layout: left
         title: Software  
         description: | # this will include new lines to allow paragraphs
@@ -154,13 +161,13 @@ content:
           - Python-C++ Integration Module: Pybind11
           -	Parallel Processing Modules: Ray, MPI, Multiprocessing 
           -	Discrete Optimization Modules: Gurobi, CPLEX, LocalSolver, SCIP, Google OR Tools
-          -	Deep Learning Modules: Pytorch
+          -	Deep Learning Modules: Pytorch, Deep Graph Library
           -	Data Analytics and Visualization Modules: Numpy, Pandas, Scipy, Scikit-learn, Matplotlib, Seaborn, Bokeh, Plotly
       - layout: left
         title: Leadership and Coordination  
         description: | # this will include new lines to allow paragraphs
-          - Master Student Thesis Supervision 
-          -	Bachelor Student Thesis Supervision
+          - Master's Student Thesis Supervision 
+          -	Bachelor's Student Thesis Supervision
           - Academia (Research) - Industry (Practice) Project Coordination
             - Productive4.0 Project (coordination between Koç University and Bosch Semiconductor Manufacturing)
             - Autonomous Planing Project (coordination between Bosch Center for Artificial Intelligence and Bosch Semiconductor Manufacturing) 
@@ -177,7 +184,7 @@ content:
       - Academic Excellence Award - Koç University, Sept 2020
       - Research Scholarship - The Scientific and Technological Research Council of Turkey, Sept 2018 - Feb 2019
       - Research Scholarship - Koç University, Sept 2014 - Sept 2018
-      - Bachelor Scholarship - Sharif University of Technology, Sept 2010 - Aug 2014
+      - Bachelor's Scholarship - Sharif University of Technology, Sept 2010 - Aug 2014
       -	Exceptional Talent Student Title (ranked among top 0.1% students in the National University Entrance Exam among more than half a million participants), June 2010
       -	Ranked among the top 1% of the participants in the National Chemistry Olympiad - Iran, Feb 2009
 
@@ -193,6 +200,10 @@ content:
     content: | # this will include new lines to allow paragraphs
       - [Optimal control of production-inventory systems with correlated demand inter-arrival and processing times](https://www.sciencedirect.com/science/article/pii/S0925527320300839)
       - [Modelling and analysis of the impact of correlated inter-event data on production control using Markovian arrival processes](https://link.springer.com/article/10.1007/s10696-018-9329-7)
+  - title: Languages
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      English (Fluent), Azerbaijani (Native), Turkish (Native), Persian (Native), German (Beginner)
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
