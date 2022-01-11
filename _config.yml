@@ -39,11 +39,11 @@ google_analytics: "UA-00000000-0"
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/ben2_3.png
 about_content: | # this will include new lines to allow paragraphs
-  I am detail-oriented person with the ability to look into the bigger picture of the problems that I am tackling.
-  My passion is to take the mathematical, statistical, and machine learning models, combine it with data, computation power, and intuition, and deploy it in improving the practical
-  processes with the aim of building autonomous decisions making systems.
+  I am a detail-oriented person with the ability to look into the bigger picture of the problems that I am tackling.
+  My passion is to take the mathematical, statistical, and machine learning models, combine them with data, computation power, and intuition, and deploy them in improving the practical
+  processes to build autonomous decisions making systems.
 
-  My work focuses on two different threds. First, developing intelligent data-driven decision making algorithms for solving optimization problems. 
+  My work focuses on two different threads. First, developing intelligent data-driven decision-making algorithms for solving optimization problems. 
   Second, using optimization, statistics, and machine learning in solving challenging real-world problems. 
 
 content:
@@ -53,19 +53,19 @@ content:
       - layout: left
         border: weak
         title: Block Evolutionary Training
-        link:
+        link: In collabration with [Stefan Falkner](https://scholar.google.com/citations?user=r7FWJEkAAAAJ&hl=de)
         link_text: 
         additional_links:
-          - title: In collabration with [Stefan Falkner](https://scholar.google.com/citations?user=r7FWJEkAAAAJ&hl=de)
+          - title: 
             icon: 
             url:
         quote: >
-          Our algorithm, Block Evolutionary Training (BET), reaches higher rewards than Reinforcement Learning methods on PyBullet physics engine simulater.    
+          Our algorithm, Block Evolutionary Training (BET), achieves higher rewards than Reinforcement Learning methods on PyBullet physics engine simulator with significantly smaller neural networks.    
         description: | # this will include new lines to allow paragraphs
-          Evolutionary methods have been shown to be a competitive alternative to DRL methods in solving sequential decision-making problems.
+          Evolutionary methods are a competitive alternative to DRL methods in solving sequential decision-making problems.
           [Salimans, et al. (2017)](https://arxiv.org/abs/1703.03864) show that a simple variant of the Natural Evolution Strategies can achieve similar performance
-          to the Deep Reinforcement Learning methods on Atari and Mujoco environments. We show that by integrating the structure of the neural policy network into Evolution Strategies 
-          one can achive higher rewards on continuous control tasks such as PyBullet environment. 
+          to the Deep Reinforcement Learning methods on Atari and Mujoco environments. We demonstrate that by integrating the structure of the neural policy network into Evolution Strategies 
+          one can achieve higher rewards on continuous control tasks such as PyBullet environment. 
       - layout: left
         border: weak
         title: Inventory Management with Evolution Strategies
@@ -81,17 +81,19 @@ content:
           Recently it has been shown that Reinforcement Learning (RL) agents can learn to manage inventory in inventory management problems.
           However, RL methods require [significant hyper-parameter optimization](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3302881). 
           We show that Evolution Strategies can learn neural policy networks for managing inventory in different inventory management problems 
-          with an order of magnitude smaller neural networks and without need for hyper-parameter optimization.   
+          with an order of magnitude smaller neural networks and without the need for hyper-parameter optimization.   
       - layout: left
         title: Reinforced Genetic Algorithm
         link: 
         link_text: 
         quote: >
-          We integrate learning into genetic algorithm for solving Combinatorial Optmization problems using Reinforcement Learning and Evolution Strategies.
+          We integrate learning into the genetic algorithm for solving Combinatorial optimization problems using Reinforcement Learning and Evolution Strategies.
         description: | # this will include new lines to allow paragraphs
-          Our goals in this project are twofold. First, we train graph neural networks (GNN) that generate near optimal solutions to the Parallel Machine Scheduling, Travelling Salesman, and maximum cut problems
-          with a single forward pass of the neural network. Second, we learn GNNs that act as the mutation operator of the genetic algorithms. Our main objective is to train GNNs on smaller problems and transfer the results 
-          for solving bigger problems. This is particularly useful for problems where exact methods are computationally intensive and heuristics cannot produce acceptable solutions.  
+          We integrate the problem structure of the Combinatorial Optimization problems into Graph Neural Networks (GNN). 
+          We demonstrate that a single forward pass of the GNN generates near-optimal solutions to the Parallel Machine Scheduling and maximum cut problems. 
+          Then, we train GNNs that act as the mutation operator of the genetic algorithms.
+          Our main objective is to learn about the optimization space on small problem instances and use the learned models in solving bigger problem instances.
+          This approach helps solve problems where exact methods and heuristics cannot produce acceptable solutions in a reasonable amount of time.  
 
   - title: Working Experience
     layout: list
@@ -105,11 +107,11 @@ content:
         quote: >
           I conduct research as a member of the Future Logistics project and supervise students.  
         description: | # this will include new lines to allow paragraphs
-          I conducted my postdoctoral research as a member of the [Future Logistics](https://research.tue.nl/en/projects/future-logistics-een-proeftuin-voor-high-tech-service-logistiek) project.
-          My research mainly focused on developing block evolutionary training, extending reinforced genetic algorithm to Travelling Salesman and Maximum Cut problems, 
+          I conduct my postdoctoral research as a member of the [Future Logistics](https://research.tue.nl/en/projects/future-logistics-een-proeftuin-voor-high-tech-service-logistiek) project.
+          My research mainly focused on developing block evolutionary training, extending the reinforced genetic algorithm to Travelling Salesman and Maximum Cut problems, 
           and using Reinforcement Learning and Evolutions Strategies for solving inventory management problems. 
 
-          In addition to research, I was also involved in supervising Bachelor's and Master's student thesis. 
+          In addition to research, I also supervise Bachelors' and Masters' student theses. 
           You can find a list of Master's student theses that I was involved in either as a [thesis supervisor or assessor here](https://research.tue.nl/en/persons/manafzadeh-dizbin-manafzadeh-dizbin/supervised-student-theses/).
 
       - layout: left
@@ -119,25 +121,26 @@ content:
         caption: Feb 2019 - Jan 2020
         link: 
         quote: >
-          I worked on a project using Machine Learning for automating the scheduling decisions in the semiconductor wafer fabrication.
+          I worked on a project using Machine Learning for automating the scheduling decisions in semiconductor wafer fabrication.
         description: | # this will include new lines to allow paragraphs
-          I worked on applying Q-Learning and Monte-Carlo Tree Search to parallel machine scheduling problems arising in semiconductor wafer fabrication. 
-          In addition, I started developing the reinforced genetic algorithm for parallel machine scheduling problem which I later extended to Travelling Salesman and Maximum Cut problems. I also analyzed a dataset from Ion Implantation of the semiconductor wafer fabrication of Bosch company, and extracted the existing patterns in the data.  
+          I worked on a research project using Q-Learning and Monte-Carlo Tree Search for solving parallel machine scheduling problems that arise in semiconductor wafer fabrication. 
+          In addition, I started developing the reinforced genetic algorithm (RGA) for parallel machine scheduling problems. I extended RGA to solve Travelling Salesman and Maximum Cut problems later on. 
+          I also analyzed a dataset from Ion Implantation of the semiconductor wafer fabrication of Bosch company and extracted the existing patterns in the data.  
       - layout: left
         title: Koç University 
         sub_title: PhD Candidate in Business Administration
         caption: Sept 2016 - Sept 2020
         link: 
         quote: >
-          PhD Thesis Title:  Modelling and Control of Production Systems Based on Observed Inter-event Times: An Analytical and Empirical Investigation
+          Ph.D. Thesis Title:  Modelling and Control of Production Systems Based on Observed Inter-event Times: An Analytical and Empirical Investigation
         description: | # this will include new lines to allow paragraphs
-          I conducted my research under supervision of [Prof. Dr. Barış Tan](http://home.ku.edu.tr/~btan/) as part of the **Process Virtualization** and **Process Control** work-packages of the 
-          [Productive4.0](https://productive40.eu/) project. My contributions can be summerised as follows:
-          - I analysed several hundred million rows of event data from several hundred machines in the semiconductor wafer fabrication of the Bosch Company.
+          I conducted my research under the supervision of [Prof. Dr. Barış Tan](http://home.ku.edu.tr/~btan/) as part of the **Process Virtualization** and **Process Control** work packages of the 
+          [Productive4.0](https://productive40.eu/) project. My contributions can be summarised as follows:
+          - I analyzed several hundred million rows of event data from several hundred machines in the semiconductor wafer fabrication of the Bosch Company.
           - I developed machine learning and statistical methods to predict the production times of the products in the production network.
           - I conducted theoretical research on the implications of the data-analysis results on the optimal control of the system.
           
-          For further detail you can refer to my PhD Thesis and my publications.  
+          For further detail, you can refer to my Ph.D. Thesis and my publications.  
 
   - title: Skills # Title for the section
     layout: list # Type of content section (list/text)
@@ -163,6 +166,8 @@ content:
           -	Discrete Optimization Modules: Gurobi, CPLEX, LocalSolver, SCIP, Google OR Tools
           -	Deep Learning Modules: Pytorch, Deep Graph Library
           -	Data Analytics and Visualization Modules: Numpy, Pandas, Scipy, Scikit-learn, Matplotlib, Seaborn, Bokeh, Plotly
+          - Versioning tools: git
+
       - layout: left
         title: Leadership and Coordination  
         description: | # this will include new lines to allow paragraphs
@@ -191,9 +196,9 @@ content:
   - title: Education
     layout: text
     content: | # this will include new lines to allow paragraphs
-      -  MSc in Business Theory at  Koç University (Sept 2010 - Sept 2014)
+      -  MSc in Business Theory at  [Koç University](https://en.wikipedia.org/wiki/Ko%C3%A7_University) (Sept 2010 - Sept 2014)
 
-          link to thesis + info about scholarship
+           
       - BSc in Industrial Engineering at [Sharif University of Technology](https://en.wikipedia.org/wiki/Sharif_University_of_Technology) (Sept 2010 - Sept 2014)
   - title: Publications
     layout: text
@@ -207,7 +212,8 @@ content:
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      
+      Hobbies: Reading, Cycling, Swimming, Hiking, Cooking
+      Interests: Markets, Geopolitics, Evolution       
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
