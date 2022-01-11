@@ -196,7 +196,7 @@ content:
   - title: Education
     layout: text
     content: | # this will include new lines to allow paragraphs
-      -  MSc in Business Theory at  [Koç University](https://en.wikipedia.org/wiki/Ko%C3%A7_University) (Sept 2010 - Sept 2014)
+      -  MSc in Business Theory at  [Koç University](https://en.wikipedia.org/wiki/Ko%C3%A7_University) (Sept 2014 - Sept 2016)
 
            
       - BSc in Industrial Engineering at [Sharif University of Technology](https://en.wikipedia.org/wiki/Sharif_University_of_Technology) (Sept 2010 - Sept 2014)
