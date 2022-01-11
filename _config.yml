@@ -53,8 +53,8 @@ content:
       - layout: left
         border: weak
         title: Block Evolutionary Training
-        link: In collabration with [Stefan Falkner](https://scholar.google.com/citations?user=r7FWJEkAAAAJ&hl=de)
-        link_text: 
+        link: https://scholar.google.com/citations?user=r7FWJEkAAAAJ&hl=de
+        link_text: In collabration with Stefan Falkner
         additional_links:
           - title: 
             icon: 
@@ -213,6 +213,7 @@ content:
     layout: text
     content: | # this will include new lines to allow paragraphs
       Hobbies: Reading, Cycling, Swimming, Hiking, Cooking
+      
       Interests: Markets, Geopolitics, Evolution       
 # Footer
 footer_show_references: true
