@@ -182,6 +182,11 @@ content:
     content: | # this will include new lines to allow paragraphs
       - [Learn Offline, Search Online, A Hybrid Approach to Solving Scheduling Problems](https://patents.justia.com/patent/20210312280) (Patent No. 389829)
       - Reinforced Random Key Genetic Algorithm for Combinatorial Optimization (under processing)
+  
+  - title: Grants
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - NWO (The Dutch Research Council) 500,000 Computing Time Grant on National Computer Facilities
 
   - title: Honors and Rewards
     layout: text
@@ -203,8 +208,16 @@ content:
   - title: Publications
     layout: text
     content: | # this will include new lines to allow paragraphs
-      - [Optimal control of production-inventory systems with correlated demand inter-arrival and processing times](https://www.sciencedirect.com/science/article/pii/S0925527320300839)
-      - [Modelling and analysis of the impact of correlated inter-event data on production control using Markovian arrival processes](https://link.springer.com/article/10.1007/s10696-018-9329-7)
+      - Manafzadeh Dizbin N, Richter, F., and Falkner, S. "Reinforced Genetic Algorithm for Solving Combinatorial Optimization Problems", Working Paper, 2021
+      - Manafzadeh Dizbin N., and Tan, B., "Total Cycle Time Prediction of the Products in Semiconductor Wafer Fabrication", Working Paper, 2020
+      -  Manafzadeh Dizbin N., Laipple, G., and Tan, B., "Empirical Analysis of Product Flows at a Semiconductor Production System", Working Paper, 2020
+      - Manafzadeh Dizbin N. and Tan, B., ["Optimal control of production-inventory systems with correlated demand inter-arrival and processing times"](https://www.sciencedirect.com/science/article/pii/S0925527320300839) 
+      in International Journal of Production Economics, 2020
+      - Manafzadeh Dizbin N. and Tan, B., ["Modelling and analysis of the impact of correlated inter-event data on production control using Markovian arrival processes"](https://link.springer.com/article/10.1007/s10696-018-9329-7) 
+      in Journal of Flexible Service and Manufacturing, 2019
+      - Manafzadeh Dizbin N. and Tan, B., "Production Inventory Control with Correlated Demand"
+      in The Eleventh International Conference on Stochastic Models of Manufacturing and Service Operations, Italy, 2017
+  
   - title: Languages
     layout: text
     content: | # this will include new lines to allow paragraphs
