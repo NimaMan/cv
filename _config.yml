@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Nima Manafzadeh Dizbin
-title: Postdoctoral Research Associate
+title: Data Scientist
 email: nima.manaf8@gmail.com
 # email_title: Email (Email title override)
 website: nimaman.github.io
@@ -20,7 +20,7 @@ darkmode: false
 twitter_username: nima_mnf
 github_username:  NimaMan
 instagram_username: nima_manaf
-linkedin_username: nima-manafzadeh-dizbin-02174b74
+linkedin_username: nima-manaf-phd-02174b74
 googlescholar_username: citations?user=oE_9bDkAAAAJ&hl=en
 
 # Additional icon links
@@ -37,15 +37,13 @@ google_analytics: "UA-00000000-0"
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: images/ben2_3.png
+about_profile_image: images/man.jpg
 about_content: | # this will include new lines to allow paragraphs
   I am a detail-oriented person with the ability to look into the bigger picture of the problems that I am tackling.
   My passion is to take the mathematical, statistical, and machine learning models, combine them with data, computation power, and intuition, and deploy them in improving the practical
   processes to build autonomous decisions making systems.
 
-  My work focuses on two different threads. First, developing intelligent data-driven decision-making algorithms for solving optimization problems. 
-  Second, using optimization, statistics, and machine learning in solving challenging real-world problems. 
-
+  
 content:
   - title: Recent Projects # Title for the section
     layout: list # Type of content section (list/text)
@@ -100,9 +98,20 @@ content:
     content:
       - layout: left
         border: weak
+        title: Rabobank
+        sub_title: Data Scientist
+        caption: May 2022 - Present
+        link: 
+        quote: >
+          I work as a Data Scientist in the Risk Analytics Department in Rabobank
+        description: | # this will include new lines to allow paragraphs
+          My current projects in the bank focuses on designing monitoring and backtesting frameworks for statistical and machine learning models used within the bank 
+      
+      - layout: left
+        border: weak
         title: Eindhoven University of Technology
         sub_title: Postdoctoral Research Associate
-        caption: Sept 2020 - present
+        caption: Sept 2020 - April 2022
         link: 
         quote: >
           I conduct research as a member of the Future Logistics project and supervise students.  
@@ -160,12 +169,12 @@ content:
       - layout: left
         title: Software  
         description: | # this will include new lines to allow paragraphs
-          - Programming Languages: Python, C++
+          - Programming Languages: Python, C++, SQL
           - Python-C++ Integration Module: Pybind11
           -	Parallel Processing Modules: Ray, MPI, Multiprocessing 
           -	Discrete Optimization Modules: Gurobi, CPLEX, LocalSolver, SCIP, Google OR Tools
-          -	Deep Learning Modules: Pytorch, Deep Graph Library
-          -	Data Analytics and Visualization Modules: Numpy, Pandas, Scipy, Scikit-learn, Matplotlib, Seaborn, Bokeh, Plotly
+          -	Machine Learning Modules: Pytorch, Deep Graph Library, Scikit-learn, XGBoost, LightGBM, CatBoost, Statsmodels
+          -	Data Analytics and Visualization Modules: Numpy, Scipy, Pandas, cudf, Zarr, Matplotlib, Seaborn, Bokeh, Plotly
           - Versioning tools: git
 
       - layout: left
