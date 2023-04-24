@@ -17,7 +17,7 @@ website: nimaman.github.io
 darkmode: false
 
 # Social links
-twitter_username: nima_mnf
+twitter_username: nima_manaf
 github_username:  NimaMan
 instagram_username: nima_manaf
 linkedin_username: nima-manaf-phd-02174b74
@@ -106,7 +106,7 @@ content:
           - I developed machine learning and statistical methods to predict the production times of the products in the production network.
           - I conducted theoretical research on the implications of the data-analysis results on the optimal control of the system.
           
-          For further detail, you can refer to my Ph.D. Thesis and my publications.  
+          For further detail, you can refer to my [Ph.D. Thesis published on Arxiv](https://arxiv.org/abs/2204.01079) or a [short overview of it](https://nimaman.github.io/posts/phd_thesis/) and my publications.  
 
   - title: Skills # Title for the section
     layout: list # Type of content section (list/text)
@@ -143,7 +143,7 @@ content:
             - Productive4.0 Project (coordination between Koç University and Bosch Semiconductor Manufacturing)
             - Autonomous Planing Project (coordination between Bosch Center for Artificial Intelligence and Bosch Semiconductor Manufacturing) 
 
-  - title: Intellectual Properties
+  - title: Certificates
     layout: text
     content: | # this will include new lines to allow paragraphs
       - Supervising [Bachelor's Student](https://www.linkedin.com/in/nima-manaf-phd-02174b74/overlay/experience/1676821846/multiple-media-viewer/?profileId=ACoAAA_FolkBxdEzai2ebXIchHGXCCzKFwCCJRs&treasuryMediaId=1635523854237)
