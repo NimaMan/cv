@@ -24,14 +24,14 @@ linkedin_username: nima-manaf-phd-02174b74
 googlescholar_username: citations?user=oE_9bDkAAAAJ&hl=en
 
 # Additional icon links
-additional_links:
+#additional_links:
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
 #   url: Link url (eg. https://google.com)
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
- gtm: "GTM-0000000"
+# gtm: "GTM-0000000"
 # gtag: "UA-00000000-0"
 #google_analytics: "UA-00000000-0"
 
@@ -146,6 +146,12 @@ content:
   - title: Intellectual Properties
     layout: text
     content: | # this will include new lines to allow paragraphs
+      - Supervising [Bachelor's Student](https://www.linkedin.com/in/nima-manaf-phd-02174b74/overlay/experience/1676821846/multiple-media-viewer/?profileId=ACoAAA_FolkBxdEzai2ebXIchHGXCCzKFwCCJRs&treasuryMediaId=1635523854237)
+      - Supervising [Master's Student](https://www.linkedin.com/in/nima-manaf-phd-02174b74/overlay/experience/1676821846/multiple-media-viewer/?profileId=ACoAAA_FolkBxdEzai2ebXIchHGXCCzKFwCCJRs&treasuryMediaId=1635523852219)
+
+  - title: Intellectual Properties
+    layout: text
+    content: | # this will include new lines to allow paragraphs
       - [Learn Offline, Search Online, A Hybrid Approach to Solving Scheduling Problems](https://patents.justia.com/patent/20210312280) (Patent No. 389829)
       - Reinforced Random Key Genetic Algorithm for Combinatorial Optimization (under processing)
   
@@ -153,6 +159,8 @@ content:
     layout: text
     content: | # this will include new lines to allow paragraphs
       - NWO (The Dutch Research Council) 500,000 Computing Time Grant on National Computer Facilities
+      - NWO (The Dutch Research Council) 1000,000 Computing Time Grant on National Computer Facilities
+
 
   - title: Honors and Rewards
     layout: text
