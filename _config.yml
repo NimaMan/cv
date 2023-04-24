@@ -31,68 +31,18 @@ additional_links:
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
+ gtm: "GTM-0000000"
 # gtag: "UA-00000000-0"
-google_analytics: "UA-00000000-0"
+#google_analytics: "UA-00000000-0"
 
 # About Section
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/man.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I am a detail-oriented person with the ability to look into the bigger picture of the problems that I am tackling.
-  My passion is to take the mathematical, statistical, and machine learning models, combine them with data, computation power, and intuition, and deploy them in improving the practical
-  processes to build autonomous decisions making systems.
-
+ As a practical problem-solver with a passion for data science, I thrive on using mathematical, statistical, and machine learning models to improve real-world processes. With a keen eye for detail and the ability to see the big picture, I enjoy combining data, computation power, and intuition to build autonomous decision-making systems that drive measurable improvements. Whether working independently or as part of a team, I am committed to using my skills and expertise to deliver results that exceed expectations.
   
 content:
-  - title: Recent Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        border: weak
-        title: Block Evolutionary Training
-        link: https://scholar.google.com/citations?user=r7FWJEkAAAAJ&hl=de
-        link_text: In collabration with Stefan Falkner
-        additional_links:
-          - title: 
-            icon: 
-            url:
-        quote: >
-          Our algorithm, Block Evolutionary Training (BET), achieves higher rewards than Reinforcement Learning methods on PyBullet physics engine simulator with significantly smaller neural networks.    
-        description: | # this will include new lines to allow paragraphs
-          Evolutionary methods are a competitive alternative to DRL methods in solving sequential decision-making problems.
-          [Salimans, et al. (2017)](https://arxiv.org/abs/1703.03864) show that a simple variant of the Natural Evolution Strategies can achieve similar performance
-          to the Deep Reinforcement Learning methods on Atari and Mujoco environments. We demonstrate that by integrating the structure of the neural policy network into Evolution Strategies 
-          one can achieve higher rewards on continuous control tasks such as PyBullet environment. 
-      - layout: left
-        border: weak
-        title: Inventory Management with Evolution Strategies
-        link: https://nimaman.github.io/posts/lost_sales_rl/
-        link_text: Blog post on Evolution Strategies for solving Lost Sales Inventory Management problem
-        additional_links:
-          - title:  https://github.com/NimaMan/invman_public
-            icon: fab fa-github
-            url: Github repository of the project
-        quote: >
-          We show that Evolution Strategies can learn neural policy networks for managing inventory in different inventory management problems.  
-        description: | # this will include new lines to allow paragraphs
-          Recently it has been shown that Reinforcement Learning (RL) agents can learn to manage inventory in inventory management problems.
-          However, RL methods require [significant hyper-parameter optimization](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3302881). 
-          We show that Evolution Strategies can learn neural policy networks for managing inventory in different inventory management problems 
-          with an order of magnitude smaller neural networks and without the need for hyper-parameter optimization.   
-      - layout: left
-        title: Reinforced Genetic Algorithm
-        link: 
-        link_text: 
-        quote: >
-          We integrate learning into the genetic algorithm for solving Combinatorial optimization problems using Reinforcement Learning and Evolution Strategies.
-        description: | # this will include new lines to allow paragraphs
-          We integrate the problem structure of the Combinatorial Optimization problems into Graph Neural Networks (GNN). 
-          We demonstrate that a single forward pass of the GNN generates near-optimal solutions to the Parallel Machine Scheduling and maximum cut problems. 
-          Then, we train GNNs that act as the mutation operator of the genetic algorithms.
-          Our main objective is to learn about the optimization space on small problem instances and use the learned models in solving bigger problem instances.
-          This approach helps solve problems where exact methods and heuristics cannot produce acceptable solutions in a reasonable amount of time.  
-
+  
   - title: Working Experience
     layout: list
     content:
@@ -105,8 +55,15 @@ content:
         quote: >
           I work as a Data Scientist in the Risk Analytics Department in Rabobank
         description: | # this will include new lines to allow paragraphs
-          My current projects in the bank focuses on designing monitoring and backtesting frameworks for statistical and machine learning models used within the bank 
-      
+          I began my professional journey with Rabobank as a member of the Model Monitoring team, and later transitioned to become a Model Consultant within the Methodology team of the Credit Analytics Department.
+          During my tenure, I took on numerous projects that enabled me to gain a holistic understanding of the department's operations and strategic goals. Alongside contributing to the organization's growth through various projects, such as the ECB ML Survey, I also kept a keen eye on the finer details such as implementing state of the most recent ECB Guidelines.
+          Some of my projects during this period are:
+          - ECB ML Survey: I investigated the usage of ML models within Tribe Credit Analytics to be reported to ECB
+          - Point of Contact Model Consultant to address methodological challenges of the Rural Portfolio      
+          - Python implementation of the latest EBA Guidelines for Economic Downtrun Detection and Calibration
+          - Development of Challenger Models for different teams such as IFRS9
+          - Design and implementation of Model Monitoring frameworks for Risk-Adjusted Return on Capital
+
       - layout: left
         border: weak
         title: Eindhoven University of Technology
@@ -227,6 +184,54 @@ content:
       - Manafzadeh Dizbin N. and Tan, B., "Production Inventory Control with Correlated Demand"
       in The Eleventh International Conference on Stochastic Models of Manufacturing and Service Operations, Italy, 2017
   
+  - title: Preview of some of my PhD and Postdoc projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        border: weak
+        title: Block Evolutionary Training
+        link: https://scholar.google.com/citations?user=r7FWJEkAAAAJ&hl=de
+        link_text: In collabration with Stefan Falkner
+        additional_links:
+          - title: 
+            icon: 
+            url:
+        quote: >
+          Our algorithm, Block Evolutionary Training (BET), achieves higher rewards than Reinforcement Learning methods on PyBullet physics engine simulator with significantly smaller neural networks.    
+        description: | # this will include new lines to allow paragraphs
+          Evolutionary methods are a competitive alternative to DRL methods in solving sequential decision-making problems.
+          [Salimans, et al. (2017)](https://arxiv.org/abs/1703.03864) show that a simple variant of the Natural Evolution Strategies can achieve similar performance
+          to the Deep Reinforcement Learning methods on Atari and Mujoco environments. We demonstrate that by integrating the structure of the neural policy network into Evolution Strategies 
+          one can achieve higher rewards on continuous control tasks such as PyBullet environment. 
+      - layout: left
+        border: weak
+        title: Inventory Management with Evolution Strategies
+        link: https://nimaman.github.io/posts/lost_sales_rl/
+        link_text: Blog post on Evolution Strategies for solving Lost Sales Inventory Management problem
+        additional_links:
+          - title:  https://github.com/NimaMan/invman_public
+            icon: fab fa-github
+            url: Github repository of the project
+        quote: >
+          We show that Evolution Strategies can learn neural policy networks for managing inventory in different inventory management problems.  
+        description: | # this will include new lines to allow paragraphs
+          Recently it has been shown that Reinforcement Learning (RL) agents can learn to manage inventory in inventory management problems.
+          However, RL methods require [significant hyper-parameter optimization](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3302881). 
+          We show that Evolution Strategies can learn neural policy networks for managing inventory in different inventory management problems 
+          with an order of magnitude smaller neural networks and without the need for hyper-parameter optimization.   
+      - layout: left
+        title: Reinforced Genetic Algorithm
+        link: 
+        link_text: 
+        quote: >
+          We integrate learning into the genetic algorithm for solving Combinatorial optimization problems using Reinforcement Learning and Evolution Strategies.
+        description: | # this will include new lines to allow paragraphs
+          We integrate the problem structure of the Combinatorial Optimization problems into Graph Neural Networks (GNN). 
+          We demonstrate that a single forward pass of the GNN generates near-optimal solutions to the Parallel Machine Scheduling and maximum cut problems. 
+          Then, we train GNNs that act as the mutation operator of the genetic algorithms.
+          Our main objective is to learn about the optimization space on small problem instances and use the learned models in solving bigger problem instances.
+          This approach helps solve problems where exact methods and heuristics cannot produce acceptable solutions in a reasonable amount of time.  
+
   - title: Languages
     layout: text
     content: | # this will include new lines to allow paragraphs
