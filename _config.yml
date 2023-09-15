@@ -55,14 +55,12 @@ content:
         quote: >
           I work as a Data Scientist in the Risk Analytics Department in Rabobank
         description: | # this will include new lines to allow paragraphs
-          I began my professional journey with Rabobank as a member of the Model Monitoring team, and later transitioned to become a Model Consultant within the Methodology team of the Credit Analytics Department.
-          During my tenure, I took on numerous projects that enabled me to gain a holistic understanding of the department's operations and strategic goals. Alongside contributing to the organization's growth through various projects, such as the ECB ML Survey, I also kept a keen eye on the finer details such as implementing state of the most recent ECB Guidelines.
-          Some of my projects during this period are:
-          - ECB ML Survey: I investigated the usage of ML models within Tribe Credit Analytics to be reported to ECB
-          - Point of Contact Model Consultant to address methodological challenges of the Rural Portfolio      
-          - Python implementation of the latest EBA Guidelines for Economic Downtrun Detection and Calibration
-          - Development of Challenger Models for different teams such as IFRS9
-          - Design and implementation of Model Monitoring frameworks for Risk-Adjusted Return on Capital
+          - Spearheaded the EU AI-Act task force.
+          - Evaluated ML models for ECB reporting.
+          - Addressed methodological challenges for the Rural Portfolio.
+          - Adapted latest EBA Guidelines with Python.
+          - Developed monitoring frameworks for Risk-Adjusted Return on Capital.
+          - Designed and implemented Challenger Models for the IFRS9 team.
 
       - layout: left
         border: weak
@@ -73,13 +71,10 @@ content:
         quote: >
           I conduct research as a member of the Future Logistics project and supervise students.  
         description: | # this will include new lines to allow paragraphs
-          I conduct my postdoctoral research as a member of the [Future Logistics](https://research.tue.nl/en/projects/future-logistics-een-proeftuin-voor-high-tech-service-logistiek) project.
-          My research mainly focused on developing block evolutionary training, extending the reinforced genetic algorithm to Travelling Salesman and Maximum Cut problems, 
-          and using Reinforcement Learning and Evolutions Strategies for solving inventory management problems. 
-
-          In addition to research, I also supervise Bachelors' and Masters' student theses. 
-          You can find a list of Master's student theses that I was involved in either as a [thesis supervisor or assessor here](https://research.tue.nl/en/persons/manafzadeh-dizbin-manafzadeh-dizbin/supervised-student-theses/).
-
+          - Conducted research on evolutionary training of deep neural netrowks as a member of the [Future Logistics](https://research.tue.nl/en/projects/future-logistics-een-proeftuin-voor-high-tech-service-logistiek) project.
+          - Applied Reinforcement Learning and Evolution Strategies for inventory management problems.
+          - Supervised Bachelor's and Master's student [theses](https://research.tue.nl/en/persons/manafzadeh-dizbin-manafzadeh-dizbin/supervised-student-theses/).  
+          
       - layout: left
         border: weak
         title: Bosch Center for AI
@@ -87,11 +82,12 @@ content:
         caption: Feb 2019 - Jan 2020
         link: 
         quote: >
-          I worked on a project using Machine Learning for automating the scheduling decisions in semiconductor wafer fabrication.
+          I worked on a project using Machine Learning for automating decision-making in semiconductor wafer fabrication.
         description: | # this will include new lines to allow paragraphs
-          I worked on a research project using Q-Learning and Monte-Carlo Tree Search for solving parallel machine scheduling problems that arise in semiconductor wafer fabrication. 
-          In addition, I started developing the reinforced genetic algorithm (RGA) for parallel machine scheduling problems. I extended RGA to solve Travelling Salesman and Maximum Cut problems later on. 
-          I also analyzed a dataset from Ion Implantation of the semiconductor wafer fabrication of Bosch company and extracted the existing patterns in the data.  
+          - Researched application of Q-Learning and Monte-Carlo Tree Search for parallel machine scheduling problems.
+          - Developed the reinforced genetic algorithm.
+          - Analyzed large manufacturing network data from the semiconductor wafer fabrication.
+
       - layout: left
         title: Koç University 
         sub_title: PhD Candidate in Business Administration
@@ -101,18 +97,18 @@ content:
           Ph.D. Thesis Title:  Modelling and Control of Production Systems Based on Observed Inter-event Times: An Analytical and Empirical Investigation
         description: | # this will include new lines to allow paragraphs
           I conducted my research under the supervision of [Prof. Dr. Barış Tan](http://home.ku.edu.tr/~btan/) as part of the **Process Virtualization** and **Process Control** work packages of the 
-          [Productive4.0](https://productive40.eu/) project. My contributions can be summarised as follows:
-          - I analyzed several hundred million rows of event data from several hundred machines in the semiconductor wafer fabrication of the Bosch Company.
-          - I developed machine learning and statistical methods to predict the production times of the products in the production network.
-          - I conducted theoretical research on the implications of the data-analysis results on the optimal control of the system.
-          
+          [Productive4.0](https://productive40.eu/) project. During my Ph.D. I:
+          - Analyzed extensive event data from semiconductor wafer fabrication.
+          - Developed ML and statistical methods for production time prediction.
+          - Conducted theoretical research on optimal control based on data-analysis results.
+
           For further detail, you can refer to my [Ph.D. Thesis published on Arxiv](https://arxiv.org/abs/2204.01079) or a [short overview of it](https://nimaman.github.io/posts/phd_thesis/) and my publications.  
 
   - title: Skills # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Machine Learning  
+        title: Machine Learning and AI
         description: | # this will include new lines to allow paragraphs
           Reinforcement Learning, Supervised Learning, Unsupervised Learning, Deep Learning, Graph Neural Networks, Gradient-Free Learning, Statistical Learning 
       - layout: left
@@ -124,7 +120,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           Supply Chain Management, Resource Allocation, Inventory Control, Production Planning, Scheduling, Routing, Healthcare Operations, Queuing Systems, Semiconductor Wafer Fabrication
       - layout: left
-        title: Software  
+        title: Software and Programming Languages
         description: | # this will include new lines to allow paragraphs
           - Programming Languages: Python, C++, SQL
           - Python-C++ Integration Module: Pybind11
@@ -140,9 +136,8 @@ content:
           - Master's Student Thesis Supervision 
           -	Bachelor's Student Thesis Supervision
           - Academia (Research) - Industry (Practice) Project Coordination
-            - Productive4.0 Project (coordination between Koç University and Bosch Semiconductor Manufacturing)
-            - Autonomous Planing Project (coordination between Bosch Center for Artificial Intelligence and Bosch Semiconductor Manufacturing) 
-
+          -	Project Management
+          
   - title: Certificates
     layout: text
     content: | # this will include new lines to allow paragraphs
