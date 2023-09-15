@@ -188,10 +188,10 @@
 }
 
 p.quote {
-  font-size: 1.4rem;
+  font-size: 1.8rem;  // Increased font size for better visibility
   font-style: italic;
   padding: 1rem 2.5rem;
-  text-align: center;
+  text-align: left;   // Aligned text to the left
 
   @media print {
     text-align: left;
