@@ -39,8 +39,7 @@ googlescholar_username: citations?user=oE_9bDkAAAAJ&hl=en
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/man.jpg
 about_content: | # this will include new lines to allow paragraphs
- As a practical problem-solver with a passion for data science, I thrive on using mathematical, statistical, and machine learning models to improve real-world processes. With a keen eye for detail and the ability to see the big picture, I enjoy combining data, computation power, and intuition to build autonomous decision-making systems that drive measurable improvements. Whether working independently or as part of a team, I am committed to using my skills and expertise to deliver results that exceed expectations.
-  
+ I started with a Ph.D. in Business to understand big-picture challenges. But I saw that to make real change, I needed deeper tech skills. So, I dived into engineering, software, and AI. Now, as a data scientist, I use both my broad view and detailed know-how to find smart solutions. I'm always pushing to do better, whether on my own or with a team.  
 content:
   
   - title: Working Experience
@@ -137,7 +136,7 @@ content:
           -	Bachelor's Student Thesis Supervision
           - Academia (Research) - Industry (Practice) Project Coordination
           -	Project Management
-          
+
   - title: Certificates
     layout: text
     content: | # this will include new lines to allow paragraphs
