@@ -52,7 +52,7 @@ content:
         caption: May 2022 - Present
         link: 
         quote: >
-          I work as a Data Scientist in the Risk Analytics Department in Rabobank
+          Driving data analytics at Rabobank's Risk Department
         description: | # this will include new lines to allow paragraphs
           - Spearheaded the EU AI-Act task force.
           - Evaluated ML models for ECB reporting.
@@ -68,7 +68,7 @@ content:
         caption: Sept 2020 - April 2022
         link: 
         quote: >
-          I conduct research as a member of the Future Logistics project and supervise students.  
+          Leading cutting-edge research in the Future Logistics initiative while mentoring the next generation
         description: | # this will include new lines to allow paragraphs
           - Conducted research on evolutionary training of deep neural netrowks as a member of the [Future Logistics](https://research.tue.nl/en/projects/future-logistics-een-proeftuin-voor-high-tech-service-logistiek) project.
           - Applied Reinforcement Learning and Evolution Strategies for inventory management problems.
@@ -81,7 +81,7 @@ content:
         caption: Feb 2019 - Jan 2020
         link: 
         quote: >
-          I worked on a project using Machine Learning for automating decision-making in semiconductor wafer fabrication.
+          Pioneered ML-driven automation for semiconductor decision-making.
         description: | # this will include new lines to allow paragraphs
           - Researched application of Q-Learning and Monte-Carlo Tree Search for parallel machine scheduling problems.
           - Developed the reinforced genetic algorithm.
