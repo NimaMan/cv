@@ -187,13 +187,16 @@
   color: #4C4C4C;
 }
 
+
 p.quote {
   font-size: 2rem;
   font-weight: bold;
   font-style: italic;
   padding: 1rem 2.5rem;
   text-align: center;
-  color: #333;  // Default color for light mode
+  color: #FFF;  // White text color for contrast with blue background
+  background-color: #007BFF;  // Standard blue color
+  border-radius: 8px;  // Gives a rounded edge to the background
 
   @media print {
     padding: 0rem 1rem;
@@ -202,6 +205,7 @@ p.quote {
 
   // Adjusted color for better visibility in dark mode
   body[data-theme='dark'] & {
-    color: #BBB;
+    color: #FFF;
+    background-color: #0069D9;  // Slightly darker blue for dark mode
   }
 }
