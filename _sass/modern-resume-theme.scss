@@ -188,11 +188,11 @@
 }
 
 p.quote {
-  font-size: 2rem;  // Increased font size for more emphasis
-  font-weight: bold;  // Made text bold for added emphasis
+  font-size: 2rem;
+  font-weight: bold;
   font-style: italic;
   padding: 1rem 2.5rem;
-  text-align: left;  // Align to the left
+  text-align: center;
   color: #333;  // Default color for light mode
 
   @media print {
@@ -200,8 +200,8 @@ p.quote {
     margin-top: 1rem;
   }
 
-  // Specify color for dark mode
+  // Adjusted color for better visibility in dark mode
   body[data-theme='dark'] & {
-    color: #DDD;
+    color: #BBB;
   }
 }
