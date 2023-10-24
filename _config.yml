@@ -237,13 +237,13 @@ content:
   - title: Languages
     layout: text
     content: | # this will include new lines to allow paragraphs
-      English (Fluent), Azerbaijani (Native), Turkish (Native), Persian (Native), German (Beginner)
+      English (Fluent), Azerbaijani (Native), Turkish (Native), Persian (Native), Dutch (binnenkort ook)
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Hobbies: Reading, Cycling, Swimming, Hiking, Cooking
+      Hobbies: Electronic Music, Audio Porcessing, Reading, Fitness, Cycling, Swimming, Hiking, Cooking
       
-      Interests: Markets, Geopolitics, Evolution       
+      Interests: Markets, Evolution, Mindfullness, Innovation, Psychology
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
