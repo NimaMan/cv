@@ -1,0 +1,68 @@
+{% include "header.html" %}
+
+<div class="container">
+    <div class="row justify-content-center">
+        
+        <div class="container">
+            <div class="row justify-content-center">
+              <div id="about" class="container mt-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-10">
+                    <div class="profile-section d-flex align-items-center">
+                      <div class="col-md-3 profile-photo mt-7" style="flex: 1;">
+                        <img src="{{ url_for('static', filename='img/rabo-photo.jpg') }}" alt="Nima Manaf" class="img-fluid rounded-circle" style="width: 100%; max-width: 500px; ">
+                      </div>
+                      <div class="col-md-1 social-icons mt-7 d-flex flex-column align-items-center">
+                        <a href="https://www.linkedin.com/in/nima-manaf-phd-02174b74/" target="_blank" class="mb-2">
+                          <i class="fab fa-linkedin fa-2x"></i>
+                        </a> 
+                        <a href="https://twitter.com/nima_manaf" target="_blank" class="mb-2">
+                          <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=oE_9bDkAAAAJ&hl=en" target="_blank" class="mb-2">
+                          <i class="fas fa-graduation-cap fa-2x"></i>
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Nima_Manaf" target="_blank" class="mb-2">
+                          <i class="fab fa-researchgate fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/nimaman" target="_blank" class="mb-2">
+                            <i class="fab fa-github fa-2x"></i>
+                          </a>
+                          <a href="mailto:nima.manaf8@gmail.com" target="_blank" class="mb-2">
+                            <i class="fas fa-envelope fa-2x"></i>
+                          </a>
+                      </div>
+                      <div class="profile-description mt-5" style="flex: 2; padding-left: 40px;">
+                        <h1>Hi there! </h1>
+                        <p>
+                          I'm Nima, a data scientist with an insatiable curiosity and a passion for uncovering the hidden stories within data. My journey has been exciting, combining a Ph.D. in Business with explorations into engineering and AI. This unique blend has given me the ability to see the big picture while still appreciating the beauty in the details. I'm always eager to push the boundaries of what's possible, using innovative techniques to harness the power of data, compute, and digitization. Whether I'm working independently or collaborating with a diverse team, I bring enthusiasm and a positive attitude. I'm a lifelong learner who thrives in fast-paced, challenging environments, driven by a desire to make a real impact.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           {% include "work_experience.html" %}
+            
+           {% include "education.html" %}
+
+            {% include "awards.html" %}
+    
+            {% include "languages_and_interests.html" %}
+
+            {% include "skills.html" %}
+            
+            
+
+            
+            
+        </div>
+    </div>
+    
+</div>
+
+
+
+{% include "footer.html" %}
