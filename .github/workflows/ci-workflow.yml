@@ -1,34 +1,33 @@
-name: CI workflow
+name: Deploy Flask Site to GitHub Pages
 
 on:
   push:
-    branches: [ master ]  # Change to your main branch name if it's not 'master'
+    branches:
+      - main  # Adjust if your main branch has a different name
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9  # Make sure this matches your Python version
+        python-version: '3.9'  # Ensure this matches your development environment
 
     - name: Install dependencies
       run: |
-        python -m venv venv
-        source venv/bin/activate
-        pip install -r requirements.txt
+        python -m pip install --upgrade pip
+        pip install Flask Flask-Frozen
 
     - name: Freeze Flask app
-      run: |
-        source venv/bin/activate
-        python freeze.py
+      run: python freeze.py  # Ensure this script correctly builds your static site to the 'build/' directory
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build  # This should be the directory where Frozen-Flask generates the static files
+        publish_dir: ./build  # The directory where your site is generated
+        keep_files: true  # Set to false to clean old files from gh-pages branch, true to allow incremental builds
