@@ -1,542 +1,463 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en-US" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nima Manafzadeh Dizbin - CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1e40af;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-light: #f9fafb;
+            --border-color: #e5e7eb;
+        }
 
-  <!-- Document Title -->
-  <title>Nima Manaf</title>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            background-color: #ffffff;
+        }
 
+        /* Modern Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            padding: 1rem 0;
+        }
 
-  <!-- Stylesheets -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-  <link href="./static/css/theme.css" rel="stylesheet" id="style-default">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  
+        .navbar-brand {
+            font-weight: 600;
+            color: var(--text-primary) !important;
+            font-size: 1.25rem;
+        }
+
+        .nav-link {
+            color: var(--text-secondary) !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+            transition: all 0.3s ease;
+            border-radius: 0.375rem;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+            background-color: rgba(37, 99, 235, 0.05);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 5rem 0 4rem;
+            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-item i {
+            color: var(--primary-color);
+        }
+
+        /* Section Styling */
+        .cv-section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .cv-section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 100%;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        /* Experience Cards */
+        .experience-card {
+            background: var(--bg-light);
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-color: var(--border-color);
+        }
+
+        .company-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .position-title {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-period {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .experience-location {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        /* Skills */
+        .skill-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+            border-radius: 2rem;
+            font-weight: 500;
+            margin: 0.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Education */
+        .education-item {
+            background: var(--bg-light);
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .degree-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .institution-name {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--bg-light);
+            padding: 3rem 0;
+            margin-top: 5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
 </head>
-
-    <body>
-        <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container px-4 px-lg-5">
-      <a class="navbar-brand" href="/">Nima Manaf</a>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/posts/">Posts</a></li>
-          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="https://nimaman.github.io/cv/">CV</a></li>
-          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/about/">About</a></li>
-          <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/contact/">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-        
-
-<div class="container">
-    <div class="row justify-content-center">
-        
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <div class="row justify-content-center">
-              <div id="about" class="container mt-5">
-                <div class="row justify-content-center">
-                  <div class="col-md-10">
-                    <div class="profile-section d-flex align-items-center">
-                      <div class="col-md-3 profile-photo mt-7" style="flex: 1;">
-                        <img src="./static/img/rabo-photo.jpg" alt="Nima Manaf" class="img-fluid rounded-circle" style="width: 100%; max-width: 500px; ">
-                      </div>
-                      <div class="col-md-1 social-icons mt-7 d-flex flex-column align-items-center">
-                        <a href="https://www.linkedin.com/in/nima-manaf-phd-02174b74/" target="_blank" class="mb-2">
-                          <i class="fab fa-linkedin fa-2x"></i>
-                        </a> 
-                        <a href="https://twitter.com/nima_manaf" target="_blank" class="mb-2">
-                          <i class="fab fa-twitter fa-2x"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=oE_9bDkAAAAJ&hl=en" target="_blank" class="mb-2">
-                          <i class="fas fa-graduation-cap fa-2x"></i>
-                        </a>
-                        <a href="https://www.researchgate.net/profile/Nima_Manaf" target="_blank" class="mb-2">
-                          <i class="fab fa-researchgate fa-2x"></i>
-                        </a>
-                        <a href="https://github.com/nimaman" target="_blank" class="mb-2">
-                            <i class="fab fa-github fa-2x"></i>
-                          </a>
-                          <a href="mailto:nima.manaf8@gmail.com" target="_blank" class="mb-2">
-                            <i class="fas fa-envelope fa-2x"></i>
-                          </a>
-                      </div>
-                      <div class="profile-description mt-5" style="flex: 2; padding-left: 40px;">
-                        <h1>Hi there! </h1>
-                        <p>
-                          I'm Nima, a data scientist with an insatiable curiosity and a passion for uncovering the hidden stories within data. My journey has been exciting, combining a Ph.D. in Business with explorations into engineering and AI. This unique blend has given me the ability to see the big picture while still appreciating the beauty in the details. I'm always eager to push the boundaries of what's possible, using innovative techniques to harness the power of data, compute, and digitization. Whether I'm working independently or collaborating with a diverse team, I bring enthusiasm and a positive attitude. I'm a lifelong learner who thrives in fast-paced, challenging environments, driven by a desire to make a real impact.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <a class="navbar-brand" href="/">Nima Manafzadeh Dizbin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://nimaman.github.io/cv/" target="_blank">Full CV</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-           <div id="work-experience" class="container mt-5">
-    <div class="card mb-3">
-        <div class="card-header bg-body-tertiary">
-            <h3 class="mb-2 text-center" data-anchor="data-anchor">Work Experience</h3>
         </div>
-        <div class="card-body px-sm-4 px-md-8 px-lg-6 px-xxl-8">
-            <div class="timeline-vertical">
-                <!-- Rabobank -->
-                <div class="timeline-item timeline-item-start">
-                    <div class="timeline-icon icon-item icon-item-lg text-primary border-300"><span class="fs-8 fas fa-briefcase"></span></div>
-                    <div class="row">
-                        <div class="col-lg-6 timeline-item-time">
-                            <div>
-                                <p class="fs-10 mb-0 fw-semi-bold">May 2022 - Present</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="timeline-item-content">
-                                <div class="timeline-item-card">
-                                    <h5 class="mb-2">Data Scientist</h5>
-                                    <p class="fs-10 text-muted mb-2">Rabobank, Utrecht, Netherlands</p>
-                                    <p class="fs-10 mb-0">Driving data analytics at Rabobank's Risk Department</p>
-                                    <ul class="fs-10 mb-0">
-                                        <li>Spearheaded the EU AI-Act task force.</li>
-                                        <li>Evaluated ML models for ECB reporting.</li>
-                                        <li>Addressed methodological challenges for the Rural Portfolio.</li>
-                                        <li>Adapted latest EBA Guidelines with Python.</li>
-                                        <li>Developed monitoring frameworks for Risk-Adjusted Return on Capital.</li>
-                                        <li>Designed and implemented Challenger Models for the IFRS9 team.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                    <img src="./static/img/man.jpg" alt="Nima Manafzadeh Dizbin" class="profile-img">
                 </div>
-                <!-- Eindhoven University of Technology -->
-                <div class="timeline-item timeline-item-end">
-                    <div class="timeline-icon icon-item icon-item-lg text-primary border-300 ">
-                        <span class="fs-8 fas fa-university"></span>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 timeline-item-time">
-                            <div>
-                                <p class="fs-14 mt-1 fw-semi-bold">Sept 2020 - April 2022</p>
-                            </div>
+                <div class="col-md-8">
+                    <h1 class="hero-title">Nima Manafzadeh Dizbin</h1>
+                    <p class="hero-subtitle">Senior Data Scientist & Operations Research Expert</p>
+                    <p class="lead text-secondary">Bridging the gap between advanced analytics and business strategy through data science, optimization, and machine learning.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>nimamanaf@gmail.com</span>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="timeline-item-content">
-                                <div class="timeline-item-card">
-                                    <h5 class="mb-2">Postdoctoral Research Associate</h5>
-                                    <p class="fs-10 text-muted mb-2">Eindhoven University of Technology, Eindhoven, Netherlands</p>
-                                    <p class="fs-10 mb-0">Leading cutting-edge research in the Future Logistics initiative while mentoring the next generation</p>
-                                    <ul class="fs-10 mb-0">
-                                        <li>Conducted research on evolutionary training of deep neural networks.</li>
-                                        <li>Applied Reinforcement Learning and Evolution Strategies for inventory management problems.</li>
-                                        <li>Supervised Bachelor’s and Master’s student theses.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Amsterdam, Netherlands</span>
                         </div>
-                    </div>
-                </div>
-                <!-- Bosch Center for AI -->
-                <div class="timeline-item timeline-item-start">
-                    <div class="timeline-icon icon-item icon-item-lg text-primary border-300"><span class="fs-8 fas fa-cogs"></span></div>
-                    <div class="row">
-                        <div class="col-lg-6 timeline-item-time">
-                            <div>
-                                <p class="fs-10 mb-0 fw-semi-bold">Feb 2019 - Jan 2020</p>
-                            </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/nimamanafzadehdizbin/" target="_blank" class="text-decoration-none">LinkedIn</a>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="timeline-item-content">
-                                <div class="timeline-item-card">
-                                    <h5 class="mb-2">PhD Industrial Sabbatical</h5>
-                                    <p class="fs-10 text-muted mb-2">Bosch Center for AI, Stuttgart, Germany</p>
-                                    <p class="fs-10 mb-0">Pioneered ML-driven automation for semiconductor decision-making.</p>
-                                    <ul class="fs-10 mb-0">
-                                        <li>Researched application of Q-Learning and Monte-Carlo Tree Search for parallel machine scheduling problems.</li>
-                                        <li>Developed the reinforced genetic algorithm.</li>
-                                        <li>Analyzed large manufacturing network data from the semiconductor wafer fabrication.</li>
-                                        <li>Learn Offline, Search Online, A Hybrid Approach to Solving Scheduling Problems <a href="https://patents.justia.com/patent/20210312280" target="_blank" class="text-primary">Patent No. 389829</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/nimaman" target="_blank" class="text-decoration-none">GitHub</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="cv-section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
             
-           <div id="education" class="container mt-2">
-    <div class="card mb-3">
-        <div class="card-header bg-body-tertiary">
-            <h3 class="mb-2 text-center" data-anchor="data-anchor">Education</h3>
-        </div>
-        <div class="card-body px-sm-4 px-md-8 px-lg-6 px-xxl-8">
-            <div class="timeline-vertical">
-                <!-- PhD in Business Administration -->
-                <div class="timeline-item timeline-item-start">
-                    <div class="timeline-icon icon-item icon-item-lg text-primary border-300">
-                        <span class="fs-8 fas fa-graduation-cap"></span>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 timeline-item-time">
-                            <div>
-                                <p class="fs-10 mt-2 fw-semi-bold">Sept 2016 - Sept 2020</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="timeline-item-content">
-                                <div class="timeline-item-card">
-                                    <h5 class="mb-2">PhD in Business Administration</h5>
-                                    <p class="fs-10 text-muted mb-2">
-                                        <a href="https://www.ku.edu.tr/en/" target="_blank" class="text-primary">Koç University, Turkey</a>
-                                    </p>
-                                    <p class="fs-10 mb-0">Ph.D. Thesis Title: Modelling and Control of Production Systems Based on Observed Inter-event Times: An Analytical and Empirical Investigation</p>
-                                    <ul class="fs-10 mb-0">
-                                        <li>Analyzed extensive event data from semiconductor wafer fabrication.</li>
-                                        <li>Developed ML and statistical methods for production time prediction.</li>
-                                        <li>Conducted theoretical research on optimal control based on data-analysis results.</li>
-                                    </ul>
-                                    <p class="fs-10 mb-0">
-                                        You may find the full text of my
-                                        <a href="https://arxiv.org/abs/2204.01079" target="_blank" class="text-primary">PhD Thesis on arXiv, </a>
-                                        or an overview of it 
-                                        <a href="https://nimaman.github.io/posts/phd_thesis/" target="_blank" class="text-primary">here</a>
-                                    </p>
-                                    <p class="fs-10 mt-1 mb-0">Supervisor: <a href="https://en.wikipedia.org/wiki/Barış_Tan" target="_blank" class="text-primary">Prof. Dr. Barış Tan</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- MSc in Operations and Information Systems -->
-                <div class="timeline-item timeline-item-end">
-                    <div class="timeline-icon icon-item icon-item-lg text-primary border-300">
-                        <span class="fs-8 fas fa-graduation-cap"></span>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 timeline-item-time">
-                            <div>
-                                <p class="fs-10 mt-2 fw-semi-bold">Sept 2014 - Sept 2016</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="timeline-item-content">
-                                <div class="timeline-item-card">
-                                    <h5 class="mb-2">MSc in Operations and Information Systems</h5>
-                                    <p class="fs-10 text-muted mb-2">
-                                        <a href="https://www.ku.edu.tr/en/" target="_blank" class="text-primary">Koç University, Turkey</a>
-                                    </p>
-                                    <p class="fs-10 mb-0">
-                                        You may find the full text of my
-                                        <a href="https://tez.yok.gov.tr/UlusalTezMerkezi/tezDetay.jsp?id=ASnENAfQxOIwPyjvS8gCGw" target="_blank" class="text-primary">Master Thesis</a>
-                                        on the National Thesis Center of Turkey.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- BSc in Industrial Engineering -->
-                <div class="timeline-item timeline-item-start">
-                    <div class="timeline-icon icon-item icon-item-lg text-primary border-300">
-                        <span class="fs-8 fas fa-graduation-cap"></span>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 timeline-item-time">
-                            <div>
-                                <p class="fs-10 mt-2 fw-semi-bold">Sept 2010 - Sept 2014</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="timeline-item-content">
-                                <div class="timeline-item-card">
-                                    <h5 class="mb-2">BSc in Industrial Engineering</h5>
-                                    <p class="fs-10 text-muted mb-2">
-                                        <a href="https://www.sharif.edu/" target="_blank" class="text-primary">Sharif University of Technology, Iran</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-            <div id="awards" class="container mt-5">
-    <div class="card mb-3">
-        <div class="card-header bg-body-tertiary">
-            <h3 class="mb-2 text-center" data-anchor="data-anchor">Awards, Patents, and Certificates</h3>
-        </div>
-        <div class="card-body px-sm-4 px-md-8 px-lg-6 px-xxl-8">
-            <div class="subsection mb-3">
-                <h5>Awards</h5>
-                <ul class="fs-10 mb-0">
-                    <li>
-                        <strong>PhD Academic Excellence Award</strong>, Koç University, Turkey, Sept 2020
-                    </li>
-                    <li>
-                        <strong>Exceptional Talent Student Title (ranked among top 0.1% students in the National University Entrance Exam among more than half a million participants), June 2010</strong>
-                    <li>
-                        <strong>Ranked among the top 1% of the participants in the National Chemistry Olympiad - Iran, Feb 2009</strong>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="subsection mb-3">
-                <h5>Scholarships</h5>
-                <ul class="fs-10 mb-0">
-                    <li>
-                    <a href="https://productive40.eu" target="_blank" class="text-primary">Productive 4.0 </a> Project Scholarship from Scientific and Technological Research Council of Turkey, Sept 2017
-                    </li>
-                    <li>
-                        Full Ph.D. Scholarship, Koç University, Turkey, Sept 2016
-                    </li>
-                    <li>
-                        Full M.Sc. Scholarship, Koç University, Turkey, Sept 2014
-                    </li>
-                </ul>
-            </div>
-            <div class="subsection mb-3">
-                <h5>Patents</h5>
-                <ul class="fs-10 mb-0">
-                    <li>
-                        Learn Offline, Search Online, A Hybrid Approach to Solving Scheduling Problems <a href="https://patents.justia.com/patent/20210312280" target="_blank" class="text-primary">(Patent No. 389829)</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="subsection">
-                <h5>Certificates</h5>
-                <ul class="fs-10 mb-0">
-                    <li>
-                        Supervising <a href="https://www.linkedin.com/in/nima-manaf-phd-02174b74/overlay/experience/1676821846/multiple-media-viewer/?profileId=ACoAAA_FolkBxdEzai2ebXIchHGXCCzKFwCCJRs&treasuryMediaId=163552385221" target="_blank" class="text-primary">Master's</a> Students
-                    </li>
-                    <li>
-                        Supervising <a href="https://www.linkedin.com/in/nima-manaf-phd-02174b74/overlay/experience/1676821846/multiple-media-viewer/?profileId=ACoAAA_FolkBxdEzai2ebXIchHGXCCzKFwCCJRs&treasuryMediaId=163552385423" target="_blank" class="text-primary">Bachelor's</a> Students
-                    </li>
+            <div class="experience-card">
+                <h3 class="company-name">Rabobank</h3>
+                <h4 class="position-title">Data Scientist - Asset Liability Management</h4>
+                <p class="experience-period">October 2024 - Present</p>
+                <p class="experience-location"><i class="fas fa-map-marker-alt me-2"></i>Utrecht, Netherlands</p>
+                <ul>
+                    <li>Developing advanced quantitative models for asset-liability management and risk assessment</li>
+                    <li>Implementing machine learning solutions for financial forecasting and optimization</li>
+                    <li>Collaborating with cross-functional teams to enhance data-driven decision making</li>
                 </ul>
             </div>
 
-            <div class="subsection mb-3">
-                <h5>Grants</h5>
-                <ul class="fs-10 mb-0">                    
-                    <li>
-                        NWO (The Dutch Research Council) 500,000 Hours of Computing Time Grant on National Computer Facilities
-                    </li>
-                    <li>
-                        NWO (The Dutch Research Council) 1000,000 Hours of Computing Time Grant on National Computer Facilities
-                    </li>
+            <div class="experience-card">
+                <h3 class="company-name">Rabobank</h3>
+                <h4 class="position-title">Data Scientist - Credit Risk</h4>
+                <p class="experience-period">May 2022 - September 2024</p>
+                <p class="experience-location"><i class="fas fa-map-marker-alt me-2"></i>Utrecht, Netherlands</p>
+                <ul>
+                    <li>Python implementation of an internal credit risk modelling library, and supporting modeller on its usage</li>
+                    <li>Migrating risk modeling package to use PySpark on DataBricks</li>
+                    <li>Authored position paper on using Machine Learning in Internal Rating Based models</li>
+                    <li>Updated the Probability of Default Model Development procedure</li>
+                    <li>Evaluated ML models for ECB reporting</li>
+                    <li>Developed monitoring frameworks for Risk-Adjusted Return on Capital</li>
+                    <li>Designed and implemented Challenger Time Series Models on Observed Default Rate Prediction for the IFRS9 team</li>
+                    <li>Member of the EU AI-Act task force</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <h3 class="company-name">Eindhoven University of Technology</h3>
+                <h4 class="position-title">Postdoctoral Research Associate</h4>
+                <p class="experience-period">September 2020 - April 2022</p>
+                <p class="experience-location"><i class="fas fa-map-marker-alt me-2"></i>Eindhoven, Netherlands</p>
+                <ul>
+                    <li>Led research in the Future Logistics Project on improving inventory management using Reinforcement Learning and AI</li>
+                    <li>Conducted research on evolutionary training of deep neural networks</li>
+                    <li>Applied Reinforcement Learning and Evolution Strategies for inventory management problems</li>
+                    <li>Supervised Bachelor's and Master's student theses on various value chain and process optimization topics</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <h3 class="company-name">Bosch Center for AI</h3>
+                <h4 class="position-title">PhD Industrial Sabbatical</h4>
+                <p class="experience-period">February 2019 - January 2020</p>
+                <p class="experience-location"><i class="fas fa-map-marker-alt me-2"></i>Stuttgart, Germany</p>
+                <ul>
+                    <li>Contributed to ML-driven decision-making systems for semiconductor wafer fabrication</li>
+                    <li>Researched application of Q-Learning and Monte-Carlo Tree Search (AlphaGo algorithm) for scheduling problems</li>
+                    <li>Developed the reinforced genetic algorithm</li>
+                    <li>Analyzed large manufacturing network data from semiconductor wafer fabrication</li>
+                    <li>Patent: "Learn Offline, Search Online, A Hybrid Approach to Solving Scheduling Problems" (Patent No. 389829)</li>
                 </ul>
             </div>
         </div>
-    </div>
-</div>
-    
-            <div id="languages-interests" class="container mt-5">
-    <div class="row">
-        <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card border h-100 border-primary">
-                <div class="card-body">
-                    <div class="card-title">Languages</div>
-                    <ul class="fs-10 mb-0">
-                        <li><strong>Azerbaijani</strong> (Native)</li>
-                        <li><strong>Turkish</strong> (Native)</li>
-                        <li><strong>Farsi</strong> (Native)</li>
-                        <li><strong>English</strong> (Fluent)</li>
-                        <li><strong>Dutch</strong> (Beginner)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="card border h-100 border-success">
-                <div class="card-body">
-                    <div class="card-title">Personal Interests</div>
-                    <ul class="fs-10 mb-0">
-                        <li>Evolution</li>
-                        <li>Markets</li>
-                        <li>Electronic Music</li>
-                        <li>Natural Language Processing</li>
-                        <li>Mathematics</li>
-                        <li>Numerical Computing</li>
-                        <li>Physical Activities</li>
-                        <li>Wandering in nature</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    </section>
 
-            <div id="skills" class="container mt-5">
-    <div class="card mb-3">
-        <div class="card-header bg-body-tertiary">
-            <h3 class="mb-2 text-center" data-anchor="data-anchor">Skills</h3>
+    <!-- Education Section -->
+    <section id="education" class="cv-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <h3 class="degree-title">Ph.D. in Business Administration</h3>
+                <p class="institution-name">Koç University</p>
+                <p class="experience-period">2016 - 2020</p>
+                <p>Dissertation: "Modelling and Control of Production Systems Based on Observed Inter-event Times: An Analytical and Empirical Investigation"</p>
+                <ul>
+                    <li>Analyzed 17 million rows of event data from semiconductor wafer fabrication</li>
+                    <li>Developed ML and statistical methods for production time prediction</li>
+                    <li>PhD Academic Excellence Award recipient</li>
+                </ul>
+            </div>
+
+            <div class="education-item">
+                <h3 class="degree-title">M.Sc. in Operations and Information Systems</h3>
+                <p class="institution-name">Koç University</p>
+                <p class="experience-period">2014 - 2016</p>
+                <p>Full scholarship recipient</p>
+            </div>
+
+            <div class="education-item">
+                <h3 class="degree-title">B.Sc. in Industrial Engineering</h3>
+                <p class="institution-name">Sharif University of Technology</p>
+                <p class="experience-period">2010 - 2014</p>
+                <p>Exceptional Talent Student (top 0.1% in National University Entrance Exam)</p>
+            </div>
         </div>
-        <div class="card-body px-sm-4 px-md-8 px-lg-6 px-xxl-8">
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="cv-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
             <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="icon-item icon-item-lg text-primary me-3">
-                                    <i class="fas fa-brain fa-2x"></i>
-                                </div>
-                                <h5 class="mb-0">Machine Learning and AI</h5>
-                            </div>
-                            <p class="mt-3 mb-0">Reinforcement Learning, Supervised Learning, Unsupervised Learning, Deep Learning, Graph Neural Networks, Gradient-Free Learning, Statistical Learning</p>
-                        </div>
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-3">Programming & Tools</h4>
+                    <div>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">PySpark</span>
+                        <span class="skill-badge">DataBricks</span>
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">AWS</span>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="icon-item icon-item-lg text-primary me-3">
-                                    <i class="fas fa-cogs fa-2x"></i>
-                                </div>
-                                <h5 class="mb-0">Optimization Methods</h5>
-                            </div>
-                            <p class="mt-3 mb-0">Combinatorial Optimization, Stochastic Optimization, Evolution Strategies, Genetic Algorithms, Monte-Carlo Tree Search, Markov Decision Processes, Mathematical Programming, Constraint Programming, Dynamic Programming</p>
-                        </div>
+                
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-3">Data Science & ML</h4>
+                    <div>
+                        <span class="skill-badge">PyTorch</span>
+                        <span class="skill-badge">Scikit-learn</span>
+                        <span class="skill-badge">XGBoost</span>
+                        <span class="skill-badge">LightGBM</span>
+                        <span class="skill-badge">Deep Learning</span>
+                        <span class="skill-badge">Reinforcement Learning</span>
+                        <span class="skill-badge">Graph Neural Networks</span>
+                        <span class="skill-badge">NLP</span>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="icon-item icon-item-lg text-primary me-3">
-                                    <i class="fas fa-industry fa-2x"></i>
-                                </div>
-                                <h5 class="mb-0">Applications</h5>
-                            </div>
-                            <p class="mt-3 mb-0">Supply Chain Management, Resource Allocation, Inventory Control, Production Planning, Scheduling, Routing, Healthcare Operations, Queuing Systems, Semiconductor Wafer Fabrication</p>
-                        </div>
+                
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-3">Finance & Risk</h4>
+                    <div>
+                        <span class="skill-badge">Credit Risk Modeling</span>
+                        <span class="skill-badge">ALM</span>
+                        <span class="skill-badge">IFRS9</span>
+                        <span class="skill-badge">Basel III</span>
+                        <span class="skill-badge">Risk Analytics</span>
+                        <span class="skill-badge">Monte Carlo</span>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="icon-item icon-item-lg text-primary me-3">
-                                    <i class="fas fa-code fa-2x"></i>
-                                </div>
-                                <h5 class="mb-0">Software and Programming Languages</h5>
-                            </div>
-                            <p class="mt-3 mb-0">
-                                <strong>Programming Languages:</strong> Python, C++, SQL<br>
-                                <strong>Python-C++ Integration Module:</strong> Pybind11<br>
-                                <strong>Parallel Processing Modules:</strong> Ray, MPI, Multiprocessing<br>
-                                <strong>Discrete Optimization Modules:</strong> Gurobi, CPLEX, LocalSolver, SCIP, Google OR Tools<br>
-                                <strong>Machine Learning Modules:</strong> Pytorch, Deep Graph Library, Scikit-learn, XGBoost, LightGBM, CatBoost, Statsmodels<br>
-                                <strong>Data Analytics and Visualization Modules:</strong> Numpy, Scipy, Pandas, cudf, Zarr, Matplotlib, Seaborn, Bokeh, Plotly<br>
-                                <strong>Versioning tools:</strong> git
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <div class="icon-item icon-item-lg text-primary me-3">
-                                    <i class="fas fa-users fa-2x"></i>
-                                </div>
-                                <h5 class="mb-0">Leadership and Coordination</h5>
-                            </div>
-                            <p class="mt-3 mb-0">
-                                Master's Student Thesis Supervision<br>
-                                Bachelor's Student Thesis Supervision<br>
-                                Academia (Research) - Industry (Practice) Project Coordination<br>
-                                Project Management
-                            </p>
-                        </div>
+                
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-3">Operations Research</h4>
+                    <div>
+                        <span class="skill-badge">Optimization</span>
+                        <span class="skill-badge">Stochastic Processes</span>
+                        <span class="skill-badge">Markov Decision Processes</span>
+                        <span class="skill-badge">Genetic Algorithms</span>
+                        <span class="skill-badge">Scheduling</span>
+                        <span class="skill-badge">Supply Chain</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-            
-            
+    </section>
 
-            
-            
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="text-secondary mb-0">&copy; 2024 Nima Manafzadeh Dizbin. All rights reserved.</p>
         </div>
-    </div>
-    
-</div>
+    </footer>
 
-
-
-<footer class="border-top mt-5">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-md-10 col-lg-8 col-xl-7">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="https://twitter.com/nima_manaf">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/NimaMan">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/nima-manaf-phd-02174b74">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://scholar.google.com/citations?user=oE_9bDkAAAAJ&hl=en">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.researchgate.net/profile/Nima-Manaf">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-researchgate fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <div class="small text-center text-muted fw-bold">© Nima Manaf 2024</div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  
-<!-- Bootstrap JS and dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
